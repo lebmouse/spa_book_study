@@ -9,7 +9,7 @@
 var spa = (function () {
   var initModule = function ($container) {
     spa.shell.initModule($container);
-    console.log('asdf')
+    // console.log('asdf')
   }
   return {
     initModule: initModule
