@@ -241,11 +241,9 @@ spa.shell = (function() {
   };
   // 이벤트 핸들로 /onHashchange/ 끝
   onClickChat = function(event) {
-    if (toggleChat(stateMap.is_chat_retracted)) {
-      $.uriAnchor.setAnchor({
-        chat: stateMap.is_chat_retracted ? "open" : "closed"
-      });
-    }
+    changeAnchorPart({
+      chat : (stateMap.is_chat_retracted ? 'open':'closed')
+    })
     return false;
   };
   // --------------- eventHandler END -----------------------------
